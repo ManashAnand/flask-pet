@@ -459,6 +459,24 @@ test = ["aiohttp (!=3.8.6)", "mockupdb", "pymongo[encryption] (>=4.5,<5)", "pyte
 zstd = ["pymongo[zstd] (>=4.5,<5)"]
 
 [[package]]
+name = "motor-types"
+version = "1.0.0b4"
+description = "Python stubs for Motor, a Non-Blocking MongoDB driver for Python's Tornado and AsyncIO based applications."
+optional = false
+python-versions = ">=3.8.0,<4.0"
+files = [
+    {file = "motor_types-1.0.0b4-py3-none-any.whl", hash = "sha256:6dc37c87a78acdbd658abbc4426ba3d239c4a26485a12325c65439cb7a2e27bf"},
+    {file = "motor_types-1.0.0b4.tar.gz", hash = "sha256:ece2ec5283dfef1a4d3d693db15a010b6c56fea0d46697184e36880935a9f940"},
+]
+
+[package.dependencies]
+pymongo = ">=4.3.0"
+typing-extensions = ">=4.0.0"
+
+[package.extras]
+motor = ["dnspython (>=2.3.0)", "motor (>=3.0.0)"]
+
+[[package]]
 name = "mypy"
 version = "1.10.1"
 description = "Optional static typing for Python"
@@ -1395,4 +1413,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "43c373e0a6fc8c9de3e1c86940386cd09b93ac3e5e49186a43c3a7b97e3b45ae"
+content-hash = "78450c95a074d9f3f790ebfcb323ebd66c69ba6157e86cd9e550d78b4ef0b4f8"
