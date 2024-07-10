@@ -1,0 +1,5 @@
+# poetry config virtualenvs.in-project true --local 
+# command to generate the virtual env locally in this folder only
+
+[virtualenvs]
+in-project = true
